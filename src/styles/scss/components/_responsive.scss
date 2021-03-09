@@ -1,0 +1,74 @@
+@include screen__tablet--landscape {
+    body {
+        background-color: $color__primary;
+    }
+    .menu-btn {
+        visibility: hidden;
+    }
+    
+    .nav {
+        visibility: visible;
+        background-color: $color__primary;
+    
+        .menu-nav {
+            display: block;
+            transform: translateY(0);
+            height: 100%;
+            background: transparent;
+            text-align: right;
+    
+            &__item {
+                display: inline;
+                padding-right: 1.5rem;
+
+                &--link {
+                    font-size: 1.5rem;
+                }
+            }
+        }
+    }
+    
+    .about__bio {
+        font-size: 1.5rem;
+    }  
+    
+    .products {
+        &__bio-image {
+            height: 30vh;
+        }
+
+        &__items {
+            grid-template-columns: repeat(1, 1fr);
+        }
+
+        .text-secondary {
+            font-size: 3rem;
+        }
+    }
+    
+    .contact__list {
+        padding: 3rem 5rem 0.1rem 5rem;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@mixin screen__deskstop {
+    .products {
+        &__items {
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+    
+    .contact__list {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@mixin screen__deskstop--large {
+    .products__items {
+        width: 30vw;
+    }
+    .products__bio-image {
+        height: 50vh;
+    }
+}
