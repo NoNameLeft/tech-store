@@ -1,0 +1,23 @@
+@mixin screen__phone--small {
+    @media (max-width: 320px) { @content; }
+}  
+
+@mixin screen__phone--regular {
+    @media (max-width: 599px) { @content; }
+}   
+
+@mixin screen__tablet--portrait {
+    @media (min-width: 600px) { @content; }
+}
+
+@mixin screen__tablet--landscape {
+    @media (min-width: 900px) { @content; }
+}
+
+@mixin screen__deskstop {
+    @media (min-width: 1200px) { @content; }
+}
+
+@mixin screen__deskstop--large {
+    @media (min-width: 1800px) { @content; }
+}
