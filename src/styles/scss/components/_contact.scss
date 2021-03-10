@@ -17,6 +17,7 @@
         font-size: 3rem;
         margin-bottom: 2rem;
         text-align: center;
+        padding-bottom: 7rem;
     }
 
     &__list {
@@ -24,7 +25,7 @@
         grid-template-columns: 0.82fr;
         grid-gap: 2rem;
         font-size: 1.5rem;
-        justify-content: center;
+        justify-content: right;
         align-items: center;
     }
 
@@ -41,10 +42,15 @@
     }
 }
 
+.container {
+    background-color: rgba($color__primary, 0.9);
+    padding: 1rem 1rem 5rem 1rem;
+}
+
 input[type=text], select, textarea {
     width: 100%;
     padding: 1rem;
-    border: 1px solid #ccc;
+    border: 1px solid rgba($color__primary, 0.9);
     border-radius: 0.5rem;
     box-sizing: border-box;
     margin-top: 0.5rem;
@@ -63,9 +69,4 @@ input[type=submit] {
 
 input[type=submit]:hover {
     background-color: $color__primary
-}
-
-.container {
-    border-radius: 1rem;
-    padding: 5rem;
 }
