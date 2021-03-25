@@ -1,0 +1,13 @@
+@import './styles/utils/mixins';
+
+@import './styles/settings/config';
+@import './styles/settings/breakpoints';
+@import './styles/settings/variables';
+@import './styles/settings/typography';
+
+@import './styles/components/home';
+@import './styles/components/menu';
+@import './styles/components/about';
+@import './styles/components/products';
+@import './styles/components/contact';
+@import './styles/components/responsive';

@@ -1,0 +1,25 @@
+.home {
+    height: 100%;
+    padding-top: 40vh;
+    overflow: hidden;
+    align-items: center;
+    text-align: center;
+
+    &__name {
+        font-size: 5rem;
+        padding-bottom: 1rem;
+        margin-bottom: 1rem;
+        border-bottom: 2px solid set-text-color($color__primary);
+
+        &--last {
+            color: $color__secondary;
+            font-weight: 800;
+        }
+    }
+
+    &__moto {
+        color: $color__secondary;
+        font-size: 2.5rem;
+        font-weight: 350;
+    }
+}
