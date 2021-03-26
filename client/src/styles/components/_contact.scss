@@ -1,6 +1,6 @@
 .contact {
     height: 100%;
-    padding-top: 30vh;
+    padding-top: 20vh;
     overflow: hidden;
     display: flex;
     flex-direction: column;
@@ -16,7 +16,7 @@
         font-size: 3rem;
         margin-bottom: 2rem;
         text-align: center;
-        padding-bottom: 7rem;
+        padding-bottom: 5rem;
     }
 
     &__list {
@@ -27,7 +27,7 @@
         justify-content: left;
         align-items: center;
         padding-left: 1rem;
-        margin-bottom: 7rem;
+        margin-bottom: 5rem;
     }
 }
 

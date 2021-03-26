@@ -4,7 +4,6 @@ import SocialMediaIcons from '../Common/SocialMediaIcons/'
 import bgImgStyle from '../Common/BackgroundImgStyle'
 
 const Home = () => {
-    console.log(bgImgStyle);
     return (
         <main>
             <section className="home" style={bgImgStyle}>
