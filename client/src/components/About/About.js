@@ -14,25 +14,25 @@ const About = () => {
 
         <div className="products">
             <div className="products__product">
-                <h2 className="text-secondary">Laptops</h2>
-                <h3>Apple</h3>
-                <h3>Samsung</h3>
-                <h6>and many more...</h6>
-                <p>You will find the best laptops in our shop.</p>
+                <img className="products__product--img" src="https://www.w3schools.com/w3images/team1.jpg" alt="some girl"></img>
+                <h2 className="text-secondary">CEO & Founder</h2>
+                <h3>Jane Doe</h3>
+                <p><small><em style={{color: '#F6EFC4'}}>'We sell the best laptops money can buy!'</em></small></p>
+                <h6><em>jane.doe@example.com</em></h6>
             </div>
             <div className="products__product">
-                <h2 className="text-secondary">Personal computers</h2>
-                <h3>Razer</h3>
-                <h3>IBM</h3>
-                <h6>and many more...</h6>
-                <p>We offer some nice PC configurations.</p>
+                <img className="products__product--img" src="https://www.w3schools.com/w3images/team2.jpg" alt="some guy"></img>
+                <h2 className="text-secondary">Sales Director</h2>
+                <h3>Joe Doe</h3>
+                <p><small><em style={{color: '#F6EFC4'}}>'We offer the best custom PC configurations!'</em></small></p>
+                <h6><em>joe.doe@example.com</em></h6>
             </div>
             <div className="products__product">
-                <h2 className="text-secondary">Smartphones</h2>
-                <h3>Apple</h3>
-                <h3>Samsung</h3>
-                <h6>and many more...</h6>
-                <p>Most populars phones on the market are here in our shop.</p>
+                <img className="products__product--img" src="https://www.w3schools.com/w3images/team3.jpg" alt="some old guy"></img>
+                <h2 className="text-secondary">Marketing expert</h2>
+                <h3>Mike Ross</h3>
+                <p><small><em style={{color: '#F6EFC4'}}>'You will find most popular phones here only!'</em></small></p>
+                <h6><em>mike.ross@example.com</em></h6>
             </div>
         </div>
 
