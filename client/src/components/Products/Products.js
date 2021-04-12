@@ -14,20 +14,15 @@ const Products = () => {
             <div className="products__bio">
                 <h1 className="text-secondary">Our products</h1>
             </div>
-            
             <div className="products__items">
                 <div className="products__items--item">
                     <img src={product1} alt="this is first product" />
                     <ProductsIcons />
                 </div>
-            </div>
-            <div className="products__items">
                 <div className="products__items--item">
                     <img src={product2} alt="this is second product" />
                     <ProductsIcons />
                 </div>
-            </div>
-            <div className="products__items">
                 <div className="products__items--item">
                     <img src={product3} alt="this is third product" />
                     <ProductsIcons />

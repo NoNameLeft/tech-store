@@ -1,21 +1,21 @@
 @mixin screen__phone--small {
-    @media (max-width: 320px) { @content; }
+    @media (min-width: 350px) and (max-width: 499px) { @content; }
 }  
 
 @mixin screen__phone--regular {
-    @media (max-width: 599px) { @content; }
+    @media (min-width: 500px) and (max-width: 700px) { @content; }
 }   
 
 @mixin screen__tablet--portrait {
-    @media (min-width: 600px) { @content; }
+    @media (min-width: 701px) and (max-width: 850px) { @content; }
 }
 
 @mixin screen__tablet--landscape {
-    @media (min-width: 800px) { @content; }
+    @media (min-width: 851px) { @content; }
 }
 
 @mixin screen__deskstop {
-    @media (min-width: 1200px) { @content; }
+    @media (min-width: 1000px) { @content; }
 }
 
 @mixin screen__deskstop--large {

@@ -3,6 +3,7 @@ import { useState } from 'react';
 
 const Header = () => {
     const [isPressed, setIsPressed] = useState(false);
+    var IsMenuLinkPressed = isPressed ? "menu-nav__item open" : "menu-nav__item";
     return (
         <header>
         <div className={ isPressed ? "menu-btn open" : "menu-btn" }
@@ -11,22 +12,18 @@ const Header = () => {
         </div>
 
         <nav className={ isPressed ? "nav open" : "nav" }>
-            <ul className={ isPressed ? "menu-nav open" : "menu-nav" }>
-                <li className={ isPressed ? "menu-nav__item open" : "menu-nav__item" }
-                onClick={() => setIsPressed(!isPressed)}>
-                    <NavLink to="/" activeClassName='is-active' className="menu-nav__item--link">Home</NavLink>
+            <ul className={ isPressed ? "menu-nav open" : "menu-nav" } onClick={() => setIsPressed(!isPressed)}>
+                <li className={ IsMenuLinkPressed }>
+                    <NavLink exact={true} to="/" className="menu-nav__item--link">Home</NavLink>
                 </li>
-                <li className={ isPressed ? "menu-nav__item open" : "menu-nav__item" }
-                onClick={() => setIsPressed(!isPressed)}>
-                    <NavLink to="/about" activeClassName='is-active' className="menu-nav__item--link">About</NavLink>
+                <li className={ IsMenuLinkPressed }>
+                    <NavLink to="/about" className="menu-nav__item--link">About</NavLink>
                 </li>
-                <li className={ isPressed ? "menu-nav__item open" : "menu-nav__item" }
-                onClick={() => setIsPressed(!isPressed)}>
-                    <NavLink to="/products" activeClassName='is-active' className="menu-nav__item--link">Products</NavLink>
+                <li className={ IsMenuLinkPressed }>
+                    <NavLink to="/products" className="menu-nav__item--link">Products</NavLink>
                 </li>
-                <li className={ isPressed ? "menu-nav__item open" : "menu-nav__item" }
-                onClick={() => setIsPressed(!isPressed)}>
-                    <NavLink to="/contacts" activeClassName='is-active' className="menu-nav__item--link">Contact Us</NavLink>
+                <li className={ IsMenuLinkPressed }>
+                    <NavLink to="/contacts" className="menu-nav__item--link">Contact Us</NavLink>
                 </li>
             </ul>
         </nav>

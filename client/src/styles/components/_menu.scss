@@ -90,10 +90,6 @@
                 transform: translateX(0);
             }
 
-            &.active > a {
-                color: $color__secondary;
-            }
-
             &--link {
                 display: inline-block;
                 font-size: 2rem;
@@ -101,9 +97,14 @@
                 padding: 2rem 0;
                 font-weight: 300;
                 @include transition-ease;
+
+                &.active {
+                    color: $color__secondary;
+                }
     
                 &:hover {
                     color: $color__secondary;
+                    box-shadow: inset 0 0 100px 100px rgba(255, 255, 255, 0.05);
                 }
             }
         }

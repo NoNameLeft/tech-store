@@ -25,9 +25,9 @@
             margin-bottom: 2rem;
         }
 
-      .text-secondary {
+        .text-secondary {
             padding-bottom: 1rem;
-      }
+        }
     }
   
     .products { 
@@ -37,19 +37,24 @@
         grid-template-columns: 1fr;
         grid-gap: 2rem;
   
-      &__product {
+        &__product {
             background: lighten($color__primary, 10%);
-            padding: 0.5rem;
+            padding: 1.5rem 1.5rem 1.5rem 2.2rem;
             border-style: double;
             border-width: 4px;
-  
-        h2, h3 {
-            margin: 0.5rem 0;
+            
+            &--img {
+                max-width: 300px;
+                max-height: 300px;
+            }
+
+            h2, h3 {
+                margin: 1.5rem 0;
+            }
+            h6 {
+                margin: 1.3rem 0 0;
+            }
         }
-        h6 {
-            margin: 0.3rem 0;
-        }
-      }
     }
   
     .social-icons {
