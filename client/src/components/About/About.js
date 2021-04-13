@@ -19,6 +19,7 @@ const About = () => {
                 <h3>Jane Doe</h3>
                 <p><small><em style={{color: '#F6EFC4'}}>'We sell the best laptops money can buy!'</em></small></p>
                 <h6><em>jane.doe@example.com</em></h6>
+                <button type="button" className="contactBtn">Contact me!</button>
             </div>
             <div className="products__product">
                 <img className="products__product--img" src="https://www.w3schools.com/w3images/team2.jpg" alt="some guy"></img>
@@ -26,6 +27,7 @@ const About = () => {
                 <h3>Joe Doe</h3>
                 <p><small><em style={{color: '#F6EFC4'}}>'We offer the best custom PC configurations!'</em></small></p>
                 <h6><em>joe.doe@example.com</em></h6>
+                <button type="button" className="contactBtn">Contact me!</button>
             </div>
             <div className="products__product">
                 <img className="products__product--img" src="https://www.w3schools.com/w3images/team3.jpg" alt="some old guy"></img>
@@ -33,6 +35,7 @@ const About = () => {
                 <h3>Mike Ross</h3>
                 <p><small><em style={{color: '#F6EFC4'}}>'You will find most popular phones here only!'</em></small></p>
                 <h6><em>mike.ross@example.com</em></h6>
+                <button type="button" className="contactBtn">Contact me!</button>
             </div>
         </div>
 
