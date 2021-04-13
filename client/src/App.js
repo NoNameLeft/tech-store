@@ -6,6 +6,10 @@ import Home from './components/Home';
 import About from './components/About';
 import Products from './components/Products';
 import Contact from './components/Contact';
+import Register from './components/Register';
+import Login from './components/Login';
+import Checkout from './components/Checkout';
+import Cart from './components/Cart';
 
 class App extends Component {
   render() {
@@ -17,6 +21,10 @@ class App extends Component {
           <Route path="/about" component = {About} />
           <Route path="/products" component = {Products} />
           <Route path="/contacts" component = {Contact} />
+          <Route path='/register' component = {Register} />
+          <Route path='/login' component = {Login} />
+          <Route path='/checkout' component= {Checkout} />
+          <Route path='/cart' component= {Cart} />
         </Switch>
       </div>
     );

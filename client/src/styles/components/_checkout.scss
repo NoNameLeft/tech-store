@@ -1,0 +1,77 @@
+header {
+    position: relative;
+}
+
+.row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin: 0 -16px;
+    margin-top: 2rem;
+    padding: 8px;
+    font-size: 17px;
+}
+  
+.col-25 {
+    -ms-flex: 25%;
+    flex: 25%;
+}
+  
+.col-50 {
+    -ms-flex: 50%;
+    flex: 50%;
+}
+  
+.col-75 {
+    -ms-flex: 75%;
+    flex: 75%;
+}
+  
+.col-25,
+.col-50,
+.col-75 {
+    padding: 0 10px;
+}
+  
+.box {
+    padding: 5px 20px 15px 20px;
+    border: 1px solid lightgrey;
+    border-radius: 3px;
+    background-color: lighten($color: #272727, $amount: 7);
+}
+    
+label {
+    margin-bottom: 10px;
+    display: block;
+}
+  
+.icon-container {
+    margin-bottom: 20px;
+    padding: 7px 0;
+    font-size: 24px;
+}
+
+.icon-container svg {
+    margin: 5px;
+}
+  
+.btn {
+    color: white;
+    padding: 12px;
+    margin: 10px 0;
+    border: none;
+    width: 100%;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 17px;
+}
+
+hr {
+    border: 1px solid lightgrey;
+}
+  
+.price {
+    float: right;
+    color: lightgrey;
+}

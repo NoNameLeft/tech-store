@@ -23,3 +23,39 @@
         font-weight: 350;
     }
 }
+
+.slider {
+    width: 500px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.sliderImg {
+    width: 70%;
+    height: auto;
+    object-fit: cover;
+    cursor: pointer;
+
+    &:hover {
+        opacity: 0.6;
+    }
+}
+
+.alice-carousel__dots {
+    margin: 1px 3px 5px;
+}
+
+.alice-carousel__next-btn-wrapper {
+    position: absolute;
+    top: 77px;
+    right: 43px;
+}
+
+.alice-carousel__prev-btn-wrapper {
+    position: absolute;
+    top: 80px;
+}

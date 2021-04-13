@@ -58,6 +58,7 @@
     top: 0;
     left: 0;
     width: 100vw;
+    height: 3.5rem;
     opacity: 0.98;
     visibility: hidden;
 
@@ -66,6 +67,8 @@
     }
 
     .menu-nav {
+        margin: 0;
+        padding: 0;
         display: flex;
         flex-flow: column wrap;
         align-items: center;
@@ -94,7 +97,7 @@
                 display: inline-block;
                 font-size: 2rem;
                 text-transform: uppercase;
-                padding: 2rem 0;
+                padding: 1rem 0;
                 font-weight: 300;
                 @include transition-ease;
 
@@ -111,7 +114,18 @@
     }
 }
 
-@for $i from 1 through 4 {
+.lblCartCount {
+    position: absolute;
+    top: 33px;
+    right: 5px;
+    font-size: 14px;
+    color: #272727;
+    padding: 0 5px;
+    vertical-align: top;
+    font-weight: bold;
+}
+
+@for $i from 1 through 7 {
     .menu-nav__item:nth-child(#{$i}) {
         transition-delay: ($i * 0.1s) + 0.15s;
     }

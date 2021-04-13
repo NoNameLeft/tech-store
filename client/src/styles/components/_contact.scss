@@ -76,5 +76,5 @@ input[type=submit] {
 }
 
 input[type=submit]:hover {
-    background-color: $color__primary
+    background-color: lighten($color: rgba(255, 101, 47, 0.9), $amount: 5);
 }
